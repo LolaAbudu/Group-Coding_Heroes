@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_fribel"
+            android:title="@string/drawer_view_title_fribel" />
+        <item
+            android:id="@+id/nav_lola"
+            android:title="@string/drawer_view_title_lola" />
+        <item
+            android:id="@+id/nav_sheriff"
+            android:title="@string/drawer_view_title_sheriff" />
+        <item
+            android:id="@+id/nav_naomy"
+            android:title="@string/drawer_view_title_naomi" />
+    </group>
+</menu>

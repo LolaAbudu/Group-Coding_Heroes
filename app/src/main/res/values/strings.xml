@@ -19,9 +19,9 @@
     <string name="main_imageButton_navDescription">image button for navigation drawer</string>
 
 
-    <string name="lola_github_project_1">project_1</string>
-    <string name="lola_github_project_2">project_2</string>
-    <string name="lola_github_project_3">project_3</string>
+    <string name="lola_github_project_1">project 1</string>
+    <string name="lola_github_project_2">project 2</string>
+    <string name="lola_github_project_3">project 3</string>
     <string name="lola_aboutMe_textview_description">Migrating from Nigeria to United States at the young
         age of 11, I was forced to adapt to a completely new way of life. Being raised by a single mother
         of three has taught me a lot about hard work, dedication and perseverance. After obtaining my Bachelor
@@ -53,7 +53,7 @@
     <string name="naomyGitHubProject4_name">GitHub project 4</string>
 
 
-    <string name="headerName_naomy">Naomy Portillo</string>
+    <string name="headerName_naomy">Naomy Portfolio</string>
     <string name="quoteText_naomy">"Everything in this world is magic, except for the magician" - by Dr.Ford</string>
     <string name="bioText_naomy">\nI’m an Android development Fellow at Pursuit. Bringing about my growth
         as a woman of intellect to become a leader in tech.
@@ -88,9 +88,9 @@
     <string name="fribel_profile_name">Fribel Guzman</string>
 
 
-    <string name="sheriff_github_project_1">project_1</string>
-    <string name="sheriff_github_project_2">project_2</string>
-    <string name="sheriff_github_project_3">project_3</string>
+    <string name="sheriff_github_project_1">project 1</string>
+    <string name="sheriff_github_project_2">project 2</string>
+    <string name="sheriff_github_project_3">project 3</string>
     <string name="sheriff_profile_name">Sheriff Ameen</string>
     <string name="sheriff_profile_quoteText">"True knowledge exists in knowing that you know nothing." -Socrates</string>
     <string name="sheriff_aboutMe_textview_description">
@@ -120,7 +120,11 @@ Favorite Food (Egusi Soup, Curry Chicken, anything grilled)</string>
 
 
     <string name="positionText">Software Developer</string>
-    <string name="lola_github_all_projects">My Projects</string>
+    <string name="github_all_projects">My Projects</string>
+    <string name="fribel_project_1">Project 1</string>
+    <string name="fribel_project_2">Project 2</string>
+    <string name="fribel_project_3">Project 3</string>
+    <string name="activity_main_button_create_notification">Create Notification</string>
 
 
 </resources>

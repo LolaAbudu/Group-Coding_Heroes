@@ -52,8 +52,8 @@
                 android:layout_marginLeft="@dimen/mainSummary_textView_layout_marginStartLeft"
                 android:layout_marginEnd="@dimen/mainSummary_textView_layout_marginEndRight"
                 android:layout_marginRight="@dimen/mainSummary_textView_layout_marginEndRight"
-                android:paddingLeft="@dimen/mainSummary_textView_layout_paddingLeft"
                 android:paddingStart="@dimen/main_headerTextView_paddingLeft"
+                android:paddingLeft="@dimen/mainSummary_textView_layout_paddingLeft"
                 android:text="@string/aboutUsText"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/mainSummary_textView_textSize"
@@ -74,6 +74,19 @@
                 app:layout_constraintHorizontal_bias="0.75"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/group_photo_main" />
+
+            <Button
+                android:id="@+id/button_create_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/white"
+                android:text="@string/activity_main_button_create_notification"
+                android:textColor="@color/black"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar" />
         </android.support.constraint.ConstraintLayout>
 
 

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:title="@string/github_all_projects"/>
+
     <item android:title="@string/sheriff_github_project_1"
         android:id="@+id/sheriff_project1" />
 

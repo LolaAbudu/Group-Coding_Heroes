@@ -1,7 +1,12 @@
 package com.example.lolaabudu.group_portfolio_hw_team_coding_heroes;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -12,14 +17,29 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.support.v7.widget.Toolbar;
+import android.content.BroadcastReceiver;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
+
+    Button notificationButton;
+    private NotificationManager mNotifyManager;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        notificationButton = findViewById(R.id.button_create_notification);
+        notificationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendNotification();
+            }
+        });
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -62,6 +82,26 @@ public class MainActivity extends AppCompatActivity {
                         return false;
                     }
                 });
+
+
+    }
+
+    //3 parts to building a notification
+    private void sendNotification(){
+        NotificationCompat.Builder builder= new NotificationCompat.Builder(MainActivity.this)
+                .setContentTitle("Coding Heroes notification!")
+                .setContentText("Remember to view Lola's profile page.")
+                .setSmallIcon(R.drawable.ic_android);
+
+        Intent notificationIntent = new Intent(this, MainActivity.class);
+        PendingIntent contentIntent = PendingIntent.getActivity(this,
+                0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(contentIntent);
+
+        mNotifyManager = (NotificationManager)
+                getSystemService(Context.NOTIFICATION_SERVICE);
+        mNotifyManager.notify(0,builder.build());
+
     }
 
     @Override

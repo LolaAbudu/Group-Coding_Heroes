@@ -41,6 +41,8 @@
 
     <dimen name="position_layout_marginTop">8dp</dimen>
     <dimen name="position_textSize">14sp</dimen>
+    <dimen name="fribel_textview_textsize">14sp</dimen>
+    <dimen name="fribel_textview_layout_marginTop">8dp</dimen>
 
 
 </resources>

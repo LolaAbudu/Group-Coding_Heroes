@@ -3,15 +3,16 @@
 
 
 
-    <item android:title="My Projects"/>
+    <item android:title="@string/github_all_projects"/>
 
 
-    <item android:title="Project 1"
+    <item android:title="@string/fribel_project_1"
         android:id="@+id/fribel_project1" />
 
-    <item android:title="Project 2"
+    <item android:title="@string/fribel_project_2"
         android:id="@+id/fribel_project2"/>
 
-    <item android:title="Project 3"
+    <item android:title="@string/fribel_project_3"
         android:id="@+id/fribel_project3"/>
 </menu>
+
